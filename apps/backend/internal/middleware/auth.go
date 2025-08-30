@@ -14,7 +14,7 @@ import (
 
 type AuthMiddleware struct {
 	server *server.Server
-}
+} 
 
 func NewAuthMiddleware(s *server.Server) *AuthMiddleware {
 	return &AuthMiddleware{

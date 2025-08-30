@@ -46,7 +46,7 @@ type DatabaseConfig struct {
 	ConnMaxIdleTime int    `koanf:"conn_max_idle_time" validate:"required"`
 }
 type RedisConfig struct {
-	Address string `koanf:"address" `
+	Address string `koanf:"address"  validate:"required"`
 }
 
 type IntegrationConfig struct {

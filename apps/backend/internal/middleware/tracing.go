@@ -46,7 +46,7 @@ func (tm *TracingMiddleware) EnhanceTracing() echo.MiddlewareFunc {
 			txn.AddAttribute("http.real_ip", c.RealIP())
 			txn.AddAttribute("http.user_agent", c.Request().UserAgent())
 
-			// Add request ID if available
+			// Add request ID if available 
 			if requestID := GetRequestID(c); requestID != "" {
 				txn.AddAttribute("request.id", requestID)
 			}
